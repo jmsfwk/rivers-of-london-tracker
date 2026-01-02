@@ -11,7 +11,9 @@ withDefaults(defineProps<Props>(), {
 });
 
 function onBlur(e: InputEvent) {
-  model.value = e.target?.innerText;
+  if (e.target instanceof HTMLElement) {
+    model.value = e.target.innerText;
+  }
 }
 </script>
 
