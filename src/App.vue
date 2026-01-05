@@ -21,7 +21,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container p-3">
+    <header lang="la" class="display-2 pb-3"><i>Scientia est potentia</i></header>
     <EditableContent v-model="state.name">default</EditableContent>
   </div>
 </template>
