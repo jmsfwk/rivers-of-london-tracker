@@ -8,5 +8,5 @@ export default defineConfig({
         preset: '2023',
     },
     preset,
-    images: ['public/police-helmet.svg'],
+    images: ['src/assets/police-helmet.svg'],
 })

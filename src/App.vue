@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {onMounted, ref, watch} from "vue";
 import EditableContent from "./components/EditableContent.vue";
-import PoliceHelmet from "/police-helmet.svg?url";
+import PoliceHelmet from "./assets/police-helmet.svg";
 
 type State = {
   name?: string;
