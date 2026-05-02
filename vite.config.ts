@@ -9,7 +9,6 @@ export default defineConfig({
     srcDir: 'src',
     filename: 'sw.ts',
     registerType: 'autoUpdate',
-    injectRegister: false,
 
     pwaAssets: {
       disabled: false,
