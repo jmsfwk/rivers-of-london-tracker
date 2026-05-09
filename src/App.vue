@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PoliceHelmet from  './assets/police-helmet.svg';
+import PoliceHelmet from '/police-helmet.svg?url';
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
