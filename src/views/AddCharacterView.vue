@@ -34,12 +34,12 @@ async function onSubmit(event: SubmitEvent) {
 
     <div>
       <label for="luck" class="form-label">Luck</label>
-      <input name="luck" type="number" min="50" max="100" class="form-control" required>
+      <input name="luck" type="number" min="50" max="100" inputmode="numeric" class="form-control" required>
     </div>
 
     <div>
       <label for="magic" class="form-label">Magic points</label>
-      <input name="magic" type="number" min="1" max="30" class="form-control">
+      <input name="magic" type="number" min="1" max="30" inputmode="numeric" class="form-control">
     </div>
 
     <button class="btn btn-secondary mt-3">Add character</button>
