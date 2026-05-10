@@ -19,6 +19,7 @@ async function onSubmit(event: SubmitEvent) {
       starting: data.magic ? Number.parseInt(data.magic) : null,
       current: data.magic ? Number.parseInt(data.magic) : null,
     },
+    impaired: false,
   });
 
   await router.push({ name: "home" });

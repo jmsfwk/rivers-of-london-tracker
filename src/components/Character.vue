@@ -1,7 +1,17 @@
 <script setup lang="ts">
+import {ref, watch} from 'vue';
 import type { Character} from "../types.ts";
+import { store } from "../store.ts";
 
-defineProps<{character: Character}>();
+const { character } = defineProps<{character: Character}>();
+
+const impaired = ref(character?.impaired || false);
+watch(impaired, (newValue) => {
+  store.put("character", {
+    ...character,
+    impaired: newValue,
+  });
+})
 </script>
 
 <template>
@@ -28,7 +38,7 @@ defineProps<{character: Character}>();
       <label class="card-header small bg-transparent" for="impaired">Impaired</label>
       <div class="card-body">
         <div class="form-check form-switch form-switch-md">
-          <input class="form-check-input" type="checkbox" id="impaired" switch>
+          <input class="form-check-input" type="checkbox" id="impaired" switch v-model="impaired">
         </div>
       </div>
     </div>

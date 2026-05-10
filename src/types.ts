@@ -5,4 +5,5 @@ export type Character = {
         starting: number | null;
         current: number | null;
     };
+    impaired: boolean;
 }
