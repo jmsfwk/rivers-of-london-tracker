@@ -27,12 +27,12 @@ watch(impaired, (newValue) => {
       </div>
     </div>
 
-    <div class="card border-secondary">
-      <div class="card-header small bg-transparent">Luck</div>
+    <RouterLink class="card border-primary link-primary link-underline-opacity-0" to="/luck">
+      <div class="card-header small bg-transparent text-decoration-underline">Luck</div>
       <div class="card-body">
         <div class="fs-1 text-center fw-semibold">{{ character.luck }}</div>
       </div>
-    </div>
+    </RouterLink>
 
     <div class="card border-secondary">
       <label class="card-header small bg-transparent" for="impaired">Impaired</label>
