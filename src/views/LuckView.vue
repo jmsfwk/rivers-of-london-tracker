@@ -4,7 +4,7 @@ import type {Character} from "../types.ts";
 import {ref} from "vue";
 
 const character = ref(await new Promise<Character>((resolve, reject) => {
-  const c = store.get('character');
+  const c = store.get<Character>('character');
   if (c) {
     resolve(c);
     return;
